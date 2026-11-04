@@ -1,0 +1,25 @@
+name: Code library catalog integrity
+on:
+  push:
+    branches:
+      - main
+      - 'library/**'
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: code-library-validate-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate catalog and indexed references
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Test source catalog query
+        run: python tools/search_catalog.py "module" --limit 10
