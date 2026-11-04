@@ -18,8 +18,10 @@
       "source_repo": "afterburn25/Website_Core",
       "source_path": "sdk/src/Scaffold.php",
       "source_ref": "main",
-      "status": "source_linked",
-      "purpose": "Module scaffold; prefer using original SDK rather than duplicating"
+      "status": "reference_only",
+      "purpose": "Module scaffold; prefer using original SDK rather than duplicating",
+      "copied_path": "references/website-core/sdk/Scaffold.php",
+      "source_blob_sha": "4ef779d22f27be8de4d4bf01238f719d2d419847"
     },
     {
       "id": "core-sdk-packager",
@@ -27,8 +29,10 @@
       "source_repo": "afterburn25/Website_Core",
       "source_path": "sdk/package.php",
       "source_ref": "main",
-      "status": "source_linked",
-      "purpose": "Build installable module ZIP and reject nested ZIP files"
+      "status": "reference_only",
+      "purpose": "Build installable module ZIP and reject nested ZIP files",
+      "copied_path": "references/website-core/sdk/package.php",
+      "source_blob_sha": "bb34f6d2ff385285219adeb6365aa06d8762b583"
     },
     {
       "id": "core-host-preflight",
@@ -36,8 +40,10 @@
       "source_repo": "afterburn25/Website_Core",
       "source_path": "tools/host-preflight.php",
       "source_ref": "main",
-      "status": "source_linked",
-      "purpose": "Shared-host environment preflight"
+      "status": "reference_only",
+      "purpose": "Shared-host environment preflight",
+      "copied_path": "references/website-core/host-preflight.php",
+      "source_blob_sha": "096b53b4ecff2f708e54adb6dfbb6496b0e453c9"
     },
     {
       "id": "core-release-gate",
@@ -82,8 +88,10 @@
       "source_repo": "afterburn25/Core_Mods",
       "source_path": "modules/industry-catering/src/Provider.php",
       "source_ref": "module/catering",
-      "status": "source_linked",
-      "purpose": "Advanced module API registration pattern"
+      "status": "reference_only",
+      "purpose": "Advanced module API registration pattern",
+      "copied_path": "references/core-mods/catering/Provider.php",
+      "source_blob_sha": "0e3a14796ec1a1e8d78f91aa870cba7dadd72d36"
     },
     {
       "id": "landscaping-provider",
@@ -91,8 +99,10 @@
       "source_repo": "afterburn25/Core_Mods",
       "source_path": "modules/industry-landscaping/src/Provider.php",
       "source_ref": "module/landscaping",
-      "status": "source_linked",
-      "purpose": "Service/quote industry module reference"
+      "status": "reference_only",
+      "purpose": "Service/quote industry module reference",
+      "copied_path": "references/core-mods/landscaping/Provider.php",
+      "source_blob_sha": "60b64416b032d17961123f600a0b38dc2a7d9d91"
     },
     {
       "id": "cajun-ci-health",
@@ -110,8 +120,10 @@
       "source_repo": "afterburn25/Cajun_Web",
       "source_path": "tools/check_docs.py",
       "source_ref": "main",
-      "status": "source_linked",
-      "purpose": "Documentation link and required-file verification"
+      "status": "reference_only",
+      "purpose": "Documentation link and required-file verification",
+      "copied_path": "references/cajun-web/check_docs.py",
+      "source_blob_sha": "f44a8d9375d3e03dbd41a035a9a25b6ac59f88e8"
     },
     {
       "id": "spirit-money",
@@ -129,8 +141,10 @@
       "source_repo": "afterburn25/Spirit",
       "source_path": "app/ImageVariants.php",
       "source_ref": "main",
-      "status": "source_linked",
-      "purpose": "Image variant generation example; review image-security assumptions"
+      "status": "reference_only",
+      "purpose": "Image variant generation example; review image-security assumptions",
+      "copied_path": "references/spirit/images/ImageVariants.php",
+      "source_blob_sha": "603849f9526746562aca8dd37d8898eac6416627"
     },
     {
       "id": "velvet-packager",
@@ -156,8 +170,10 @@
       "source_repo": "afterburn25/Coding_Agent",
       "source_path": "scripts/sync_model_catalog.py",
       "source_ref": "main",
-      "status": "source_linked",
-      "purpose": "Check runtime model catalog against installer definition"
+      "status": "reference_only",
+      "purpose": "Check runtime model catalog against installer definition",
+      "copied_path": "references/nexus/model-catalog/sync_model_catalog.py",
+      "source_blob_sha": "c61ec220132532d800a0a8059c9750113d80dec4"
     },
     {
       "id": "nexus-tool-registry",
@@ -203,6 +219,28 @@
       "source_ref": "main",
       "status": "source_linked",
       "purpose": "React Native mobile frontend reference"
+    },
+    {
+      "id": "core-artifact-verifier",
+      "category": "packaging",
+      "source_repo": "afterburn25/Website_Core",
+      "source_path": "tools/verify-artifact.php",
+      "source_ref": "main",
+      "status": "reference_only",
+      "purpose": "Verify packaged release archive structure; retained as upstream-specific reference",
+      "copied_path": "references/website-core/verify-artifact.php",
+      "source_blob_sha": "1dde580aa45a0b68fc08cb789facb90280b6a24b"
+    },
+    {
+      "id": "nexus-code-search",
+      "category": "agent",
+      "source_repo": "afterburn25/Coding_Agent",
+      "source_path": "localcodeagent/tools/search.py",
+      "source_ref": "main",
+      "status": "reference_only",
+      "purpose": "Local project content and filename search implementation, adapted only with dependency review",
+      "copied_path": "references/nexus/tools/search.py",
+      "source_blob_sha": "401b543d13a81c436e831f62bdbb37bad0f6636a"
     }
   ]
 }
