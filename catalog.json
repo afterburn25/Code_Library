@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "policy": "Indexed and copied references require independent license, dependency, security and functional review before production reuse",
+  "items": [
+    {
+      "id": "core-php-lint",
+      "category": "testing",
+      "source_repo": "afterburn25/Website_Core",
+      "source_path": "tools/lint.php",
+      "source_ref": "main",
+      "copied_path": "references/website-core/php-lint/lint.php",
+      "status": "reference_only",
+      "purpose": "PHP syntax checks; root assumptions must be adapted before reuse"
+    },
+    {
+      "id": "core-sdk-scaffold",
+      "category": "generator",
+      "source_repo": "afterburn25/Website_Core",
+      "source_path": "sdk/src/Scaffold.php",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Module scaffold; prefer using original SDK rather than duplicating"
+    },
+    {
+      "id": "core-sdk-packager",
+      "category": "packaging",
+      "source_repo": "afterburn25/Website_Core",
+      "source_path": "sdk/package.php",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Build installable module ZIP and reject nested ZIP files"
+    },
+    {
+      "id": "core-host-preflight",
+      "category": "ops",
+      "source_repo": "afterburn25/Website_Core",
+      "source_path": "tools/host-preflight.php",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Shared-host environment preflight"
+    },
+    {
+      "id": "core-release-gate",
+      "category": "release",
+      "source_repo": "afterburn25/Website_Core",
+      "source_path": "tools/release-gate.php",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Reusable release acceptance pattern"
+    },
+    {
+      "id": "core-module-api",
+      "category": "docs",
+      "source_repo": "afterburn25/Website_Core",
+      "source_path": "docs/MODULE_API.md",
+      "source_ref": "main",
+      "status": "canonical",
+      "purpose": "API-boundary contract; never replace with toolkit copy"
+    },
+    {
+      "id": "module-validator",
+      "category": "testing",
+      "source_repo": "afterburn25/Core_Mods",
+      "source_path": "tools/validate-modules.php",
+      "source_ref": "main",
+      "copied_path": "references/core-mods/validate-modules.php",
+      "status": "reference_only",
+      "purpose": "Validate package and release manifest metadata"
+    },
+    {
+      "id": "module-standard",
+      "category": "docs",
+      "source_repo": "afterburn25/Core_Mods",
+      "source_path": "MODULE_STANDARD.md",
+      "source_ref": "main",
+      "status": "canonical",
+      "purpose": "One branch per industry module, packaged release rules"
+    },
+    {
+      "id": "catering-provider",
+      "category": "industry",
+      "source_repo": "afterburn25/Core_Mods",
+      "source_path": "modules/industry-catering/src/Provider.php",
+      "source_ref": "module/catering",
+      "status": "source_linked",
+      "purpose": "Advanced module API registration pattern"
+    },
+    {
+      "id": "landscaping-provider",
+      "category": "industry",
+      "source_repo": "afterburn25/Core_Mods",
+      "source_path": "modules/industry-landscaping/src/Provider.php",
+      "source_ref": "module/landscaping",
+      "status": "source_linked",
+      "purpose": "Service/quote industry module reference"
+    },
+    {
+      "id": "cajun-ci-health",
+      "category": "ci",
+      "source_repo": "afterburn25/Cajun_Web",
+      "source_path": "tools/ci_health.py",
+      "source_ref": "main",
+      "copied_path": "references/cajun-web/ci_health.py",
+      "status": "reference_only",
+      "purpose": "GitHub Actions queue diagnosis; hardcoded repo requires adaptation"
+    },
+    {
+      "id": "cajun-check-docs",
+      "category": "testing",
+      "source_repo": "afterburn25/Cajun_Web",
+      "source_path": "tools/check_docs.py",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Documentation link and required-file verification"
+    },
+    {
+      "id": "spirit-money",
+      "category": "php",
+      "source_repo": "afterburn25/Spirit",
+      "source_path": "app/Money.php",
+      "source_ref": "main",
+      "copied_path": "references/spirit/money/Money.php",
+      "status": "reference_only",
+      "purpose": "Integer-minor-units money conversion; review limits/namespace before reuse"
+    },
+    {
+      "id": "spirit-image-variants",
+      "category": "images",
+      "source_repo": "afterburn25/Spirit",
+      "source_path": "app/ImageVariants.php",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Image variant generation example; review image-security assumptions"
+    },
+    {
+      "id": "velvet-packager",
+      "category": "packaging",
+      "source_repo": "afterburn25/velvet_vixxen",
+      "source_path": "scripts/package.py",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Alternative project packaging script; review before reuse"
+    },
+    {
+      "id": "nexus-model-routing",
+      "category": "ai",
+      "source_repo": "afterburn25/Coding_Agent",
+      "source_path": "MODEL_ROUTING.md",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Hardware-aware routing by role; do not duplicate source"
+    },
+    {
+      "id": "nexus-model-catalog-sync",
+      "category": "ai",
+      "source_repo": "afterburn25/Coding_Agent",
+      "source_path": "scripts/sync_model_catalog.py",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Check runtime model catalog against installer definition"
+    },
+    {
+      "id": "nexus-tool-registry",
+      "category": "agent",
+      "source_repo": "afterburn25/Coding_Agent",
+      "source_path": "TOOLS.md",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "Tool registry, permissions and workflow reference"
+    },
+    {
+      "id": "fpanel-path-reconciler",
+      "category": "ops",
+      "source_repo": "afterburn25/FPanel",
+      "source_path": "scripts/reconcile-panel-path-aliases.py",
+      "source_ref": "dev-6.57-pcc-ppanel-routing",
+      "status": "source_linked_older",
+      "purpose": "Panel path alias recovery; compare with FPanel 7.0 main before reuse"
+    },
+    {
+      "id": "fpanel-7-release",
+      "category": "ops",
+      "source_repo": "afterburn25/FPanel",
+      "source_path": "AUTHORITATIVE-SOURCE.md",
+      "source_ref": "main",
+      "status": "canonical",
+      "purpose": "Accepted Rev5 Rev9 provenance (full 337-file main tree)"
+    },
+    {
+      "id": "private-gather-web",
+      "category": "backend",
+      "source_repo": "afterburn25/private-gather",
+      "source_path": "app/Http/Controllers/Auth/MemberAuthController.php",
+      "source_ref": "recovery/pre-removal-20261103",
+      "status": "recovered_historical",
+      "purpose": "Review-only Laravel source, not latest release"
+    },
+    {
+      "id": "private-gather-mobile",
+      "category": "mobile",
+      "source_repo": "afterburn25/private-gather-APP",
+      "source_path": "App.tsx",
+      "source_ref": "main",
+      "status": "source_linked",
+      "purpose": "React Native mobile frontend reference"
+    }
+  ]
+}
