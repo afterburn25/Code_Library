@@ -13,9 +13,9 @@ Source check: GitHub account `afterburn25`; 27 repositories accessible. Recorded
 | [frames](https://github.com/afterburn25/frames) | Archive-heavy | Runtime certification ZIP archives and continuity docs; latest installable source not independently validated |
 | [private-gather](https://github.com/afterburn25/private-gather) | Historical source recoverable | main deleted Aug 24; 340-file pre-removal commit restored in draft PR #63; not yet latest |
 | [FPanel](https://github.com/afterburn25/FPanel) | Full source on main | Privora 5.0.0-dev.7.0 Rev5 Rev9, 337 files, Git tree exactly matches saved JSONL source snapshot; older PR #2 closed as superseded |
-| [Privoralabs.com](https://github.com/afterburn25/Privoralabs.com) | Empty | No code, branches, or source records located |
+| [Privoralabs.com](https://github.com/afterburn25/Privoralabs.com) | Empty | Historical Privora Labs 1.3.49 Core archive (232 files) found and verified; newer 1.5.22 full package raw bytes unavailable. Website source not yet committed |
 | [Privoralabs.org](https://github.com/afterburn25/Privoralabs.org) | Empty | No code, branches, or source records located |
-| [Model-Hub](https://github.com/afterburn25/Model-Hub) | Recovery README only | Pro 1.0.79 & Lite 1.1.60 source archives named with hashes but bytes not found; README added |
+| [Model-Hub](https://github.com/afterburn25/Model-Hub) | Recovery README only | Both Pro 1.0.79 (719 files) and Lite 1.1.60 (2,830 files) original ZIPs found; hashes and ZIP checks PASS. Clean import kit ready, source not yet committed |
 | [private-gather-APP](https://github.com/afterburn25/private-gather-APP) | Source present | React Native/Android app, scripts, docs and branches; recovery snapshot branch created |
 | [stellar-continuum](https://github.com/afterburn25/stellar-continuum) | Source present | Godot/C# game source and tests |
 | [Sentinel](https://github.com/afterburn25/Sentinel) | Source present | CMake/C++ application, include/src/tests/docs |
@@ -38,7 +38,7 @@ Source check: GitHub account `afterburn25`; 27 repositories accessible. Recorded
 - **Privora/FPanel:** [main commit 442841d](https://github.com/afterburn25/FPanel/commit/442841d351f8bbe86c9c7b0a1f03d2e30ab5fc0e), 337 source files identical to saved `Privora-Rev5R9-GitHub-Tree.jsonl`, root tree `ef1d8c733f99692a90a85ebf7e346f464791434c`. Previous older PR #2 deliberately closed as superseded.
 - **Nexus Core:** [draft PR #1](https://github.com/afterburn25/Nexus_Core/pull/1) pins the existing `Coding_Agent` source as a Git submodule. This is a pointer to the full external source, **not a standalone code migration**.
 - **Private Gather mobile:** complete source remains in `private-gather-APP`; `recovery/mobile-source-snapshot-20261103` preserves a known exact commit.
-- **Model Hub:** recovery README on [Model-Hub/main](https://github.com/afterburn25/Model-Hub), source missing pending original ZIP discovery.
+- **Model Hub:** recovery README on [Model-Hub/main](https://github.com/afterburn25/Model-Hub), original Pro/Lite Core archives located, hashes verified, source import still pending.
 - **Reusable toolkit:** `Code_Library` branch `library/starter-and-model-catalog-20261103` contains provenance-linked code references and recovery records for review.
 
 ## Recovery constraints
