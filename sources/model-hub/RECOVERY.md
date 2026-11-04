@@ -1,12 +1,12 @@
 # Model Hub source recovery and reuse audit
 
-**Status:** Located project lineage and release metadata; actual source ZIP not yet accessible for extraction in this working session. **Do not claim extracted or verified code.**
+**Status:** Original Pro and Lite Core ZIPs now recovered, materialized and SHA-256 verified; source-only import kit prepared. GitHub repository source import is still pending.
 **Checked:** 2026-11-03 (America/Chicago)
 **Target toolkit:** `afterburn25/Code_Library`, review branch `library/starter-and-model-catalog-20261103`.
 
 ## GitHub status
 
-- `afterburn25/Model-Hub`: repository exists and is public but GitHub currently reports no commits/branches/source files.
+- `afterburn25/Model-Hub`: repository now has a recovery README on main; full application source is not yet committed.
 - Historical Model Hub implementations were delivered in ChatGPT conversations as Core and upgrade ZIP archives rather than committed to this GitHub repository.
 
 ## Recovered lineage
@@ -21,7 +21,7 @@
 - `Model-Hub-Lite-1.1.60-Core.zip` — SHA-256 `1be33acba03b26c7532c3fd600630ae9a8d2f247937a2ce929f0a2fa1941e5a6`.
 - `Model-Hub-Lite-1.1.59-to-1.1.60-Upgrade.zip` — SHA-256 `e148091aadf23117c8a7963c06531d97926086b74bd5a3a1901f24b64a8aeef9`.
 
-Release metadata and hashes are in the user's file library; archive paths recorded in manifests are historical references, **not present accessible working files**.
+Original Core ZIP bytes are accessible and verified: Pro has 719 files; Lite has 2,830. The reproducible source-only recovery ZIP contains 3,548 files in separate `pro/` and `lite/` trees; its SHA-256 is `19b10bfb1d4ba374a78c49d4413572813e157df484028874e572d865e1fb331e`.
 
 ## Potentially reusable components (unverified candidates)
 
@@ -43,4 +43,4 @@ Release metadata and hashes are in the user's file library; archive paths record
 
 ## Recovery blocker
 
-Actual Model Hub Core ZIP bytes are not currently available in this session's working files or identified Library search results. The recorded SHA/metadata alone cannot reconstruct application source.
+The original source archives have been found and integrity-verified. The remaining blocker is **publishing the extracted source** to `afterburn25/Model-Hub` (safe importer bundled in the source-only recovery ZIP), reviewing licensing/secrets, and testing the application.
